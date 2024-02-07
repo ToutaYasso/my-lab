@@ -1,4 +1,3 @@
-agent any
 pipeline {
     agent  Built-In Node
     parameters {
