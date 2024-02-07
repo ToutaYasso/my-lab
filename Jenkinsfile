@@ -13,7 +13,7 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
-                        dir("terraform")
+                        dir("my-lab")
                         {
                             git "https://github.com/ToutaYasso/my-lab.git"
                             checkout scm
