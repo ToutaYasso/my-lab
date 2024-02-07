@@ -1,6 +1,6 @@
 agent  Built-In Node
 pipeline {
-
+    agent  Built-In Node
     parameters {
         booleanParam(name: 'autoApprove', defaultValue: false, description: 'Automatically run apply after generating plan?')
     } 
