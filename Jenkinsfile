@@ -24,6 +24,7 @@ pipeline {
 
         stage('Plan') {
             steps {
+                sh 'apt-get update && apt-get install git && apt-get install terraform'
                 sh 'pwd;cd terraform/ ; terraform init'
                 sh "pwd;cd terraform/ ; terraform plan -out tfplan"
                 sh 'pwd;cd terraform/ ; terraform show -no-color tfplan > tfplan.txt'
