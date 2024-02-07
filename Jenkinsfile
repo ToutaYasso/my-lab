@@ -1,3 +1,4 @@
+agent  Built-In Node
 pipeline {
 
     parameters {
@@ -8,7 +9,7 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
     }
 
-   agent  Built-In Node
+   aget any
     stages {
         stage('checkout') {
             steps {
